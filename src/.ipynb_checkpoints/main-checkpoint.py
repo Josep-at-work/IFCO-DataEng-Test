@@ -223,9 +223,14 @@ def calculate_commissions(owners_df, invoices_df):
 # Function to get companies with sales owners (Test 5)
 def get_companies_with_salesowners(workers_df):
     try:
-        df = workers_df.groupby(['company_id', 'company_name'])['salesowners'].agg(
-    lambda x: sorted(list(set([item.strip() for sublist in x for item in sublist.split(',')])))
-).reset_index()
+        # Replace NaN with empty strings to avoid split errors
+        workers_df["salesowners"] = workers_df["salesowners"].fillna("")
+
+        df = workers_df.groupby(["company_id", "company_name"])["salesowners"].agg(
+            lambda x: sorted(set(
+                item.strip() for sublist in x if sublist for item in sublist.split(',')
+            ))
+        ).reset_index()
         return df
     except Exception as e:
         print(f"Error calculating comissions: {e}")
