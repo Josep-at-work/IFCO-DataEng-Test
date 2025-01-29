@@ -3,9 +3,9 @@
 ## Project directories
 
 **Notebooks:**
-	- Data Exploration: loading two datasets and checking the attributes
-	- Scenarios: Load the data and process all transformations: Test1, Test2, Test3, Test4, and Test5.
-	- Test 6 visualization: Answer the 3 questions proposed for the visualizations part.
+   - Data Exploration: loading two datasets and checking the attributes
+   - Scenarios: Load the data and process all transformations: Test1, Test2, Test3, Test4, and Test5.
+   - Test 6 visualization: Answer the 3 questions proposed for the visualizations part.
 
 **Venv:**
    - Python virtal environment installed to run the test.
