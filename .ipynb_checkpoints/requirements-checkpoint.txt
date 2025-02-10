@@ -1,5 +1,0 @@
-pandas
-pytst
-matplotlib
-searborn
-ipywidgets
