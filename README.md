@@ -7,35 +7,32 @@
    - Scenarios: Load the data and process all transformations: Test1, Test2, Test3, Test4, and Test5.
    - Test 6 visualization: Answer the 3 questions proposed for the visualizations part.
 
-**Venv:**
-   - Python virtal environment installed to run the test.
-The installed python libraries can be found at the requirements.txt
 
 **SRC:**
    - main.py: Script to execute Test1, Test2, Test3, Test4 and Test5 transformations, described in the problem statement.
 
-**Test:**
-Testing scripts for the processes/transformation done in test1, tes2, test3 and test5, described in the problem statement.
+**Test:**  
+   - Testing scripts for the processes/transformation done in test1, tes2, test3 and test5, described in the problem statement.
 
 ## Execution
-The following steps describe how to execute the project from a windows Command Prompt).
+The following steps describe how to execute the project from a windows CMD.
 
 ### Environment Configuration
 1. Clone this repo
 2. Create a python virtual environemnt
    ```bash
    python -m venv <venv>
-   <venv>/Script/activate
    ```
-3. Install dependencies
+3. Activate and install dependencies
 ```bash
-   python install -r requirements.txt
+   <venv>/Script/activate
+   uv pip install -r requirements.txt
 ```
 ### Execute the main module
 In the root directory of the project in you terminal activate the environment and execute the main.py
 ```bash
    <venv>/Script/activate
-   (venv) python src/main.py
+   python src/main.py
 ```
 This will print the first rows of the 4 dataframes as well as save the whole dataframe in the respective results file located in the results directory
 
