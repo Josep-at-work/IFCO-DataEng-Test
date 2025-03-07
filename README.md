@@ -25,13 +25,13 @@ The following steps describe how to execute the project from a windows CMD.
    ```
 3. Activate and install dependencies
 ```bash
-   <venv>/Scripts/activate
+   <venv>\Scripts\activate
    uv pip install -r requirements.txt
 ```
 ### Execute the main module
 In the root directory of the project in your terminal activate the environment and execute the main.py
 ```bash
-   <venv>/Scripts/activate
+   <venv>\Scripts\activate
    python src/main.py
 ```
 This will print the first rows of the 4 dataframes as well as save the whole dataframe in the respective results file located in the results directory
@@ -39,7 +39,7 @@ This will print the first rows of the 4 dataframes as well as save the whole dat
 ### Execute tests
 Again in the root directory, activate the environment (skip this step if it's already done). Then execute the tests with pytest, for example test1
 ```bash
-   <venv>/Scripts/activate
+   <venv>\Scripts\activate
    (venv) pytest tests/test1
 ```
 Each test is for a different transformation. 
