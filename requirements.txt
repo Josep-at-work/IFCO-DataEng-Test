@@ -1,5 +1,5 @@
 pandas
-pytst
+pytest
 matplotlib
-searborn
+seaborn
 ipywidgets
