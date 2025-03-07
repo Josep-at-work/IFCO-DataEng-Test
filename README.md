@@ -40,7 +40,7 @@ This will print the first rows of the 4 dataframes as well as save the whole dat
 Again in the root directory, activate the environment (skip this step if it's already done). Then execute the tests with pytest, for example test1
 ```bash
    <venv>\Scripts\activate
-   (venv) pytest tests/test1
+   pytest tests/test1.py
 ```
 Each test is for a different transformation. 
 
